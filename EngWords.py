@@ -116,11 +116,11 @@ What are you gonna do?:
 	if option == 0:
 		break
 	elif option == 1: 
-		name = input("Name: ")
-		meaning = input("Meaning: ")
-		translation = input("Translation: ")
-		parent = input("Parent: ")
-		description = input("Description: ")
+		name = input("Name: ").strip()
+		meaning = input("Meaning: ").strip()
+		translation = input("Translation: ").strip()
+		parent = input("Parent: ").strip()
+		description = input("Description: ").strip()
 		word = Word(name, meaning, translation, parent, description)
 		dictionary.add(word)
 	elif option == 2:
