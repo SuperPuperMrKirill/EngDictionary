@@ -81,7 +81,7 @@ class Dictionary():
 		score = 0
 		for i in range(amount):
 			word = random.choice(self.words)
-			while not word.translation :
+			while not word.translation:
 				word = random.choice(self.words)
 
 			answer = input(F"Translate {word.name}: ")
