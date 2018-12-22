@@ -1,0 +1,7 @@
+axis;;ось;;;0;math
+axes;plural for axis;;axis;;0;math
+ancestor;;предок;;;0;
+janitor;caretaker of a building;уборщик, дворник;;;0;
+nvm;Never Mind;;;;0;
+nazi;a member of the National Socialist German Worker's Party;нацист;;;0;
+dare ;have courage to do something, challange someone to do something ;;;some text for testing description ;0;
