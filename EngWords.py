@@ -81,7 +81,7 @@ class Dictionary():
 		score = 0
 		for i in range(amount):
 			word = random.choice(self.words)
-			while not word.translation:
+			while not word.translation :
 				word = random.choice(self.words)
 
 			answer = input(F"Translate {word.name}: ")
@@ -90,6 +90,25 @@ class Dictionary():
 				print("You're right!")
 			else:
 				print(F"You're wrong. It's {word.translation}")
+			print()
+
+		print(F"That's all. Your score is {score} / {amount}")
+
+	def test_ru_eng(self, amount = 10): 
+		import random 
+
+		score = 0
+		for i in range(amount):
+			word = random.choice(self.words)
+			while not word.translation:
+				word = random.choice(self.words)
+
+			answer = input(F"Translate {word.translation}: ")
+			if answer == word.name:
+				score += 1 
+				print("You're right!")
+			else:
+				print(F"You're wrong. It's {word.name}")
 			print()
 
 		print(F"That's all. Your score is {score} / {amount}")
@@ -110,6 +129,7 @@ What are you gonna do?:
 	3 - print words
 	4 - change word (in progress)
 	5 - test (eng-ru)
+	6 - test (ru-eng)
 		  """)
 	#execute option
 	option = int(input("Enter option: "))
@@ -133,6 +153,9 @@ What are you gonna do?:
 	elif option == 5:
 		amount = int(input("How much word?: "))
 		dictionary.test_eng_ru(amount)
+	elif option == 6: 
+		amount = int(input("How much word?: ")) 
+		dictionary.test_ru_eng(amount) 
 	else: 
 		print('no such option')
 
